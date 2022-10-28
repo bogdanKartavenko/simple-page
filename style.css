@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+
+.wrapper {
+    background-color: #DAF9B2;
+}
+
+.header_wrapper {
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 72px;
+    margin-bottom: 192px;
+}
+
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.menu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 324px;
+    width: 100%;
+}
+
+.menu_btn {
+    display: none;
+}
+
+.menu {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #111827;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 648px;
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 72px;
+    margin-bottom: 24px;
+    padding: 0 15px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 30px;
+    margin-bottom: 44px;
+}
+
+.button {
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    padding: 64px 72px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D1D5DB;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .menu_wrapper {
+        display: none;
+    }
+
+    .menu_btn {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 40px;
+        height: 24px;
+        margin-top: 4px;
+    }
+
+    .menu_border {
+        background-color:#000000;
+        width: 40px;
+        height: 2px;
+    }
+    
+    .nav {
+        padding: 24px 16px;
+        margin-bottom: 48px;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 145%;
+        padding: 0;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 165%;
+        padding: 0;
+    }
+
+    .box {
+        display: flex;
+        text-align: start;
+        padding: 0 16px;
+    }
+
+    .footer {
+        padding: 50px 16px;
+    }
+
+}
